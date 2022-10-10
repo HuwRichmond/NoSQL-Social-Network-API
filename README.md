@@ -1,4 +1,4 @@
-# Social-Network-API
+# NoSQL-Social-Network-API
 
 The application is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. The application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
@@ -16,7 +16,7 @@ The application is an API for a social network web application where users can s
 
 This is a data set for a social network using a MongoDB database for the website to handle and process large amounts of unstructured data, Express.js for routing, Mongoose ODM, and the moment package to format time stamps.
 
-## User Story
+## User Story:
 
 ```md
 AS A social media startup
@@ -24,7 +24,7 @@ I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ```
 
-## Acceptance Criteria
+## Acceptance Criteria:
 
 ```md
 GIVEN a social network API
@@ -38,7 +38,7 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-## Walkthrough Videos
+## Walkthrough Videos:
 
 
 ## Installation:
