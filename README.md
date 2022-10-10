@@ -40,6 +40,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Walkthrough Videos:
 
+[Recording of app running incomplete with errors](https://drive.google.com/file/d/1LPQ06XR71hNeZcOIvJTst3E0EurotfvV/view)
 
 ## Installation:
   
