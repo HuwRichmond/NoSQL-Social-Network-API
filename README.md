@@ -1,6 +1,6 @@
 # Social-Network-API
 
-Your Challenge is to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages, you may also optionally use a JavaScript date library of your choice or the native JavaScript `Date` object to format timestamps.
+The application is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. The application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.
 
  ## Table of Contents:  
 [1. Description](#Description)  
@@ -53,7 +53,7 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 ## Tests:  
 
-Testing restful API calls with Insomnia Core  
+Testing API calls with Insomnia  
 
 ---
 **`/api/users`**
@@ -62,51 +62,51 @@ Testing restful API calls with Insomnia Core
     ```json
 
     {
-        "username": "lernantino",
-        "email": "lernantino@gmail.com"
+        "username": "SampleUser",
+        "email": "sample@email.com"
     }
     ```
 ---
 **`/api/users/:userid`**
-* `GET` a single user by its `_id` 
-* `PUT` to update a user by its `_id`
-* `DELETE` to remove user by its `_id`
+* `GET` get a user name by the `_id` 
+* `PUT` to update a user name by the `_id`
+* `DELETE` to delete a user name by the `_id`
 ---
 **`/api/users/:userId/friends/:friendId`**
-* `POST` to add a new friend to a user's friend list
-* `DELETE` to remove a friend from a user's friend list
+* `POST` add a friend to the user's friends list
+* `DELETE` remove a friend from the user's friends list
 ---
 **`/api/thoughts`** 
-* `GET` to get all thoughts
-* `POST` to create a new thought
+* `GET` to show all previous thoughts
+* `POST` to add a new thought
     ```json
 
     {
-    "thoughtText": "Here's a cool thought...",
-    "username": "lernantino",
-    "userId": "5edff358a0fcb779aa7b118b"
+    "thoughtText": "Sample text for thought goes here",
+    "username": "SampleUser",
+    "userId": "Sample12345"
     }
     ```
 ---
 **`/api/thoughts/:thoughtId`**
-* `GET` to get a single thought by its `_id`
-* `PUT` to update a thought by its `_id`
-* `DELETE` to remove a thought by its `_id`
+* `GET` retrieve a thought with it's `_id`
+* `PUT` update a thought with it's `_id`
+* `DELETE` remove a thought with it's `_id`
 ---
 
 **`/api/thoughts/:thoughtId/reactions`**
 
-* `POST` to create a reaction 
+* `POST` create a reaction 
     ```json
 
     {
-    "reactionBody":"Hell Yeah!!",
-    "username":"lernantino"
+    "reactionBody":"Thumbs Up",
+    "username":"SampleUser"
     }
     ```
 ---
 **`/api/thoughts/:thoughtId/reactions/:reactionId`**
-* `DELETE` remove a reaction by the `reactionId` 
+* `DELETE` remove a reaction with it's `reactionId` 
 
 ## License: 
    
