@@ -45,18 +45,11 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
   
 1. To use the application, clone the repository from Github using the Github clone function
 2. Install MongoDB and Insomnia
-3. Use the following console commands in terminal to run the application
+3. Use the following console command in terminal to install npm packages and run the application
 ```
-    - npm init -y
-    - npm install express
-    - npm install mongoose
-    - npm install moment
+    - npm i && npm start
 ```
-4. Start the server
-```
-    $ npm start
-```
-5. Use Insomnia to view API routes
+4. Use Insomnia to view API routes
 
 ## Tests:  
 
@@ -67,7 +60,7 @@ Testing restful API calls with Insomnia Core
 * `GET` all users
 * `POST` a new user:
     ```json
-    // example data
+
     {
         "username": "lernantino",
         "email": "lernantino@gmail.com"
@@ -87,7 +80,7 @@ Testing restful API calls with Insomnia Core
 * `GET` to get all thoughts
 * `POST` to create a new thought
     ```json
-    // example data
+
     {
     "thoughtText": "Here's a cool thought...",
     "username": "lernantino",
@@ -105,7 +98,7 @@ Testing restful API calls with Insomnia Core
 
 * `POST` to create a reaction 
     ```json
-    // example data
+
     {
     "reactionBody":"Hell Yeah!!",
     "username":"lernantino"
@@ -117,7 +110,7 @@ Testing restful API calls with Insomnia Core
 
 ## License: 
    
-   No license
+   ISC
 
 ## Github Repository:
  [github.com/HuwRichmond/NoSQL-Social-Network-API](https://github.com/HuwRichmond/NoSQL-Social-Network-API)
